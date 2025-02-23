@@ -17,7 +17,7 @@ class MLP(nn.Module):
         
         nn.init.xavier_uniform_(self.layer1.weight)
         nn.init.xavier_uniform_(self.layer2.weight)
-        nn.init.xavier_uniform_(self.layer3.weight) 
+        nn.init.zeros_(self.layer3.weight) 
        
         nn.init.zeros_(self.layer1.bias)
         nn.init.zeros_(self.layer2.bias)
